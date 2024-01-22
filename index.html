@@ -40,37 +40,76 @@
         <!-- navbar -->
         <div class="navbar bg-base-100 container mx-auto lg:px-24 px-5 mt-12 pt-0">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-normal text-[#424247]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-normal text-[#424247]">
+                <a class="lg:text-4xl text-2xl font-extrabold text-[#131318] ">Hockey<span
+                        class="text-main-bg">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal  text-base font-normal text-[#424247]">
                     <li><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
                 </ul>
-              </div>
-              <a class="lg:text-4xl text-2xl font-extrabold text-[#131318] ">Hockey<span class="text-main-bg">'</span>s</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal  text-base font-normal text-[#424247]">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
             </div>
             <div class="navbar-end">
-                <img class="lg:flex lg:justify-center lg:items-center hidden lg:pr-6 " src="Images/search.png.png" alt="">
-              <a class="btn bg-main-bg text-white lg:text-xl">Get Ticket</a>
+                <img class="lg:flex lg:justify-center lg:items-center hidden lg:pr-6 " src="Images/search.png.png"
+                    alt="">
+                <a class="btn bg-main-bg text-white lg:text-xl">Get Ticket</a>
             </div>
-          </div>
-          
-          <!-- Banner-section -->
-          <div></div>
+        </div>
+
+        <!-- Banner-section -->
+        <div class="container mx-auto lg:px-24 px-5 mt-12 pt-0">
+            <div class="carousel w-full ">
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-[url(./Images/1.png)] bg-cover bg-center lg:h-[70vh] rounded-lg">
+                    <div class="absolute flex  transform lg:-translate-y-1/2 lg:left-10 lg:bottom-0 space-x-5  translate-y-60 translate-x-28 ">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white hover:text-black border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle
+                        bg-black text-white hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2"
+                    class="carousel-item relative w-full bg-[url(./Images/2.png)] bg-cover bg-center h-[70vh] rounded-lg">
+                    <div class="absolute flex  transform lg:-translate-y-1/2 lg:left-10 lg:bottom-0 space-x-5  translate-y-60 translate-x-28 ">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white hover:text-black border-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle
+                        bg-black text-white hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide3"
+                    class="carousel-item relative w-full bg-[url(./Images/3.png)] bg-cover bg-center h-[70vh] rounded-lg">
+                    <div class="absolute flex  transform lg:-translate-y-1/2 lg:left-10 lg:bottom-0 space-x-5  translate-y-60 translate-x-28 ">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white hover:text-black border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle
+                        bg-black text-white hover:text-black border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black  lg:w-1/2 rounded-2xl mx-auto p-8 lg:-translate-y-48 lg:translate-x-60">
+                <h1 class="text-2xl font-extrabold text-white mb-4">Meet all the heroes from the field</h1>
+                <p class="text-base font-normal text-[#FFFFFF99] ">Fast-paced ice sport with two teams of six players each. Goal is to shoot a puck into the
+                opponent's net using hockey sticks.</p>
+            </div>
+        </div>
 
     </header>
     <main></main>
